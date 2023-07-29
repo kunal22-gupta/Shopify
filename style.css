@@ -90,7 +90,7 @@ h4 {
 }
 
 /*========================
-    Reusabale Selectors 
+    Reusable Selectors 
 ========================*/
 
 .mobile-hide {
@@ -138,7 +138,7 @@ h4 {
     padding: 0 0.25em;
 }
 .icon-sm {
-    margin: auto;
+    margin-left: auto;
     font-size: 1.25em;
 }
 .icon-lg {
@@ -332,9 +332,89 @@ nav .mega .flexcol {
     z-index: 1;
 }
 
+/*-----Header Main-------*/
 
+.header-main {
+    background-color: var(--secondary-dark-color);
+    padding: 1.5em 0;
+    margin-bottom: 2em;
+}
+.dpt-cat {
+    position: relative;
+    z-index: 10;
+}
+.dpt-cat .dpt-head {
+    position: relative;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    padding: 0.75em 1.5em;
+    border-radius: 7px 7px 0 0;
+    width: 300px;
+    margin-bottom: -2em;
+}
+.dpt-cat .dpt-head .mini-text {
+    color: var(--light-bg-color);
+}
+.dpt-cat .dpt-head .dpt-trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.3em;
+    width: 60px;
+    height: 60px;
+}
+.dpt-menu > ul > li > a{
+    font-size: var(--font-small);
+    height: 45px;
+    align-items: center;
+}
+.dpt-menu .has-child:hover ul {
+    display: block;
+}
+.dpt-menu .has-child li a:hover {
+    text-decoration: underline;
+}
 
+/* Search box */
+.header-main .right {
+    position: relative;
+    flex: 1;
+}
+form.search input {
+    
+    width: var(--percent100);
+    line-height: 3.5em;
+    padding: 0 7em 0 4.5em;
+    border: 0;
+    outline: 0;
+    border-radius: 7px;
+    font-size: 0.9em;
+    font-weight: var(--fw3);
+}
 
+form.search :where(span,button) {
+    position: absolute;
+    top: 0;
+    font-size: 1em;
+    padding: 0.55em 1.5em;
+    color: var(--light-text-color);
+    height: var(--percent100);
+}
+form.search button {
+    right: 0;
+    border: 0;
+    outline: 0;
+    font-size: 0.9em;
+    font-weight: var(--fw6);
+    border-radius: 0 7px 7px 0;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: var(--trans-bg);
+}
+form.search button:hover {
+    background-color: var(--dark-color);
+}
 
 
 
@@ -432,5 +512,76 @@ nav .mega .flexcol {
         color: var(--secondary-dark-color);
         text-align: center;
     }
+    .header-main .right {
+        max-width: 600px;
+        margin-left: auto;
+    }
 
+    /* Department Menu */
+    .dpt-menu {
+        position: absolute;
+        top: var(--percent100);
+        width: var(--percent100);
+        background-color: var(--white-color);
+        border: 1px solid var(--border-color);
+        border-bottom: 0;
+        border-top: 0;
+    }
+    .dpt-menu > ul > li > a {
+        font-weight: var(--fw5);
+        padding: 0 1.5em;
+        border-bottom: 1px solid var(--border-color)
+    }
+    /* Child Menu */
+    .dpt-menu .has-child > ul, .dpt-menu .mega {  
+        position: absolute;
+        top: 0;
+        left: var(--percent100);
+        border: 1px solid var(--border-color);
+        border-top: 0;
+        width: var(--percent100);
+        height: auto;
+        min-height: var(--percent100);
+        font-size: var(--font-small);
+        padding: 1.5em;
+        line-height: 2.5em;
+        display: none;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: auto;
+        
+    } 
+    .dpt-menu .beauty ul {
+        background-image: url(assets/menu/menu_bg1.jpg);
+    }
+    .dpt-menu .electric ul {
+        background-image: url(assets/menu/menu_bg2.jpg);
+    }
+    .dpt-menu .fashion ul {
+        background-image: url(assets/menu/menu_bg3.jpg);
+    }
+    .dpt-menu .homekit .mega{
+        background-image: url(assets/menu/menu_bg4.jpg);
+    }
+    .dpt-menu .has-child > :where(ul,.mega)::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(90deg, rgb(235, 235, 235) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+    .dpt-menu .mega {
+        width: auto;
+        min-width: var(--percent100);
+    }
+    .dpt-menu .has-child:hover .mega {
+        display: flex;
+    }
+    .dpt-menu .mega .row {
+        width: max-content;
+        padding-right: 6em;
+    }
+    
 }
