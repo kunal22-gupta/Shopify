@@ -270,8 +270,8 @@ header li > a {
     position: absolute;
     top: -15px;
     left: 0;
-    width: 38px;
-    height: 38px;
+    width: 35px;
+    height: 35px;
     background-color: var(--light-bg-color);
     border-radius: var(--percent50);
     z-index: -1;
@@ -281,8 +281,8 @@ header li > a {
     position: absolute;
     top: 5px;
     left: 5px;
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
     background-color: var(--secondary-color);
     border-radius: var(--percent50);
     opacity: 40%;
@@ -322,7 +322,6 @@ nav .fly-item {
     top: 0;
     right: 10px;
 }
-
 /* mega menu */
 nav .mega .flexcol {
     flex: 1;
@@ -333,7 +332,6 @@ nav .mega .flexcol {
 }
 
 /*-----Header Main-------*/
-
 .header-main {
     background-color: var(--secondary-dark-color);
     padding: 1.5em 0;
@@ -374,7 +372,6 @@ nav .mega .flexcol {
 .dpt-menu .has-child li a:hover {
     text-decoration: underline;
 }
-
 /* Search box */
 .header-main .right {
     position: relative;
@@ -414,4 +411,49 @@ form.search button {
 }
 form.search button:hover {
     background-color: var(--dark-color);
+}
+
+/*-----Responsive Menu (Off-canvas)-------*/
+.site-off {
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    background-color: var(--white-color);
+    overflow-y: auto;
+    z-index: 999999;
+}
+.off-canvas {
+    width: var(--percent100);
+    height: var(--percent100);
+    touch-action: auto;
+    padding: 1.5em;
+}
+.off-canvas .canvas-head {
+    justify-content: space-between;
+    background-color: var(--secondary-dark-color);
+    color: var(--white-color);
+    margin: -1.5em -1.5em 1.5em ;
+    padding: 1.5em;
+    border-bottom-right-radius: 200px 30px;
+}
+.off-canvas .canvas-head .logo {
+    position: relative;
+    z-index: 9;
+}
+.off-canvas .canvas-head .logo .circle {
+    opacity: 70%;
+}
+.t-close {
+    width: 32px;
+    height: 32px;
+    font-size: 1.3em;
+    border-radius: var(--percent50);
+    background-color: var(--secondary-dark-color);
+    color: var(--white-color);
+    transition: var(--trans-bg-color);
+}
+.t-close:hover {
+    background-color: var(--white-color);
+    color: var(--secondary-dark-color);
+    opacity: 60%;
 }
