@@ -4,6 +4,7 @@
         "flexcenter",
         "flexcol",
         "flexitem",
-        "flexwrap"
+        "flexwrap",
+        "thetop"
     ]
 }
