@@ -17,6 +17,18 @@ function copyMenu() {
 }
 copyMenu();
 
+// show menu for mobile
+const showMenu = document.querySelector('.trigger'),
+    closeMenu = document.querySelector('.t-close'),
+    addSite = document.querySelector('.site');
+showMenu.addEventListener('click', function () {
+    addSite.classList.toggle('show-menu');
+})
+closeMenu.addEventListener('click', function () {
+    addSite.classList.remove('show-menu');
+})
+
+
 // expand submenu for mobile view on click
 const submenu = document.querySelectorAll('.has-child .icon-sm');
 submenu.forEach((menu) => menu.addEventListener('click', toggle));
