@@ -16,3 +16,14 @@ function copyMenu() {
     toTopNav.innerHTML = fromHeaderTop.innerHTML;
 }
 copyMenu();
+
+// expand submenu for mobile view on click
+const submenu = document.querySelectorAll('.has-child .icon-sm');
+submenu.forEach((menu) => menu.addEventListener('click', toggle));
+
+function toggle(e) {
+    e.preventDefault();
+    submenu.forEach((item) => item != this ? item.closest('.has-child').classList.remove('expand') : null);
+    // if(this.closest('.has-child').classList != 'expand');
+    this.closest('.has-child').classList.toggle('expand');       
+}

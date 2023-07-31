@@ -471,6 +471,14 @@ form.search button:hover {
     font-weight: var(--fw3);
     line-height: 28px;
     padding-left: 3em;
+
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.off-canvas .expand > :where(ul, .mega) {
+    max-height: 2000px;
 }
 .off-canvas nav > ul, .off-canvas .thetop-nav  ul {
     flex-direction: column;
