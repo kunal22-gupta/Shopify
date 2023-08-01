@@ -528,3 +528,50 @@ form.search button:hover {
     line-height: 16px;
     margin: 0 0.5em 0.5em 0;
 }
+
+
+/*--------------Slider------------*/
+
+.slider .item {
+    position: relative;
+    height: 470px;
+}
+.slider .text-content:before {
+    content: '';
+    position: absolute;
+    width: 440px;
+    height: 300px;
+    left: -30px;
+    background-color: var(--white-color);
+    z-index: -1;
+    filter: blur(50px);
+    opacity: 80%;
+}
+.slider .item .text-content {
+    position: relative;
+    z-index: 1;
+    height: var(--percent100);
+    justify-content: flex-end;
+    padding: 0 0 10% 10%;
+}
+.slider h4 {
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    width: fit-content;
+    font-size: var(--font-small);
+    font-weight: var(--fw7);
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+.text-content :where(h2, h3) span:first-child {
+    font-weight: var(--fw3);
+    color: var(--light-text-color);
+}
+.text-content :where(h2, h3) span:last-child {
+    text-transform: uppercase;
+    color: var(--secondary-dark-color);
+    letter-spacing: -1px;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--secondary-dark-color);
+}
