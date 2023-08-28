@@ -322,7 +322,7 @@ nav .fly-item {
     top: 0;
     right: 10px;
 }
-/* mega menu */
+/* Mega Menu */
 nav .mega .flexcol {
     flex: 1;
     min-width: 180px;
@@ -529,8 +529,9 @@ form.search button:hover {
     margin: 0 0.5em 0.5em 0;
 }
 
-
-/*--------------Slider------------*/
+/*========================
+        Slider 
+========================*/
 
 .slider .item {
     position: relative;
@@ -576,7 +577,9 @@ form.search button:hover {
     background-color: var(--secondary-dark-color);
 }
 
-/*------------Brands------------*/
+/*========================
+        Brands
+========================*/
 .brands .wrapper {
     justify-content: space-around;
     flex-wrap: wrap;
@@ -590,29 +593,12 @@ form.search button:hover {
     opacity: 80%;
 }
 
-/*-----------Products----------*/
+/*========================
+        Products
+========================*/
 
-/* Title */
-.sec-top {
-    justify-content: space-between;
-    margin-bottom: 2em;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid var(--border-color);
-}
-.sec-top h2 {
-    position: relative;
-    font-size: 1.5em;
-    font-weight: var(--fw7);
-}
-.sec-top h2 span:not(.circle) {
-    padding-left: 2em;
-}
-.sec-top h2 .circle {
-    top: -5px;
-}
+/*-----Global products-----*/
 
-
-/* Global products */
 .products .offer {
     text-align: center;
     margin-bottom: 1.5em;
@@ -778,6 +764,27 @@ form.search button:hover {
     flex: 0 0 100%;
     margin-bottom: 2em;
     width: 100%;
+}
+
+/*-----Trending Products-----*/
+
+/* Title */
+.sec-top {
+    justify-content: space-between;
+    margin-bottom: 2em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid var(--border-color);
+}
+.sec-top h2 {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: var(--fw7);
+}
+.sec-top h2 span:not(.circle) {
+    padding-left: 2em;
+}
+.sec-top h2 .circle {
+    top: -5px;
 }
 
 /* BIG product */
