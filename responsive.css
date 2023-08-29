@@ -158,6 +158,9 @@
         right: 0;
         background: linear-gradient(90deg, rgb(235, 235, 235) 0%, rgba(255, 255, 255, 0) 100%);
     }
+    .dpt-menu .mega .flexcol {
+        z-index: 1;
+    }
     .dpt-menu .mega {
         width: auto;
         min-width: var(--percent100);
