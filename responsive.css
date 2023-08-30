@@ -162,6 +162,9 @@
         width: auto;
         min-width: var(--percent100);
     }
+    .dpt-menu .mega .flexcol {
+        z-index: 1;
+    }
     .dpt-menu .has-child:hover .mega {
         display: flex;
     }
