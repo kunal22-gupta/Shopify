@@ -190,7 +190,8 @@
     }
     
     /* Trending Products */
-    .trending .products {
+    .trending .products,
+    .product-cat .row{
         flex: 0 0 33.3333%;
     }
     .trending .products.big .media {
