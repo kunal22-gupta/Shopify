@@ -373,7 +373,8 @@ nav .mega .flexcol {
     text-decoration: underline;
 }
 /* Search box */
-.header-main .right {
+.header-main .right,
+.newsletter form {
     position: relative;
     flex: 1;
 }
@@ -912,4 +913,30 @@ form.search button:hover {
 }
 .mini-links li a:hover {
     text-decoration: underline;
+}
+
+/*========================
+        Footer
+========================*/
+
+/*-----Newsletter-------*/
+.newsletter {
+    padding: 2.5em 0;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+.newsletter h3 {
+    font-size: 1.5em;
+}
+.newsletter .content p {
+    color: var(--border-color);
+    font-weight: var(--fw3);
+    padding: 0.5em 0 1.5em;
+}
+.newsletter .content p strong {
+    color: var(--primary-color);
+}
+.newsletter form {
+    max-width: 500px;
+    width: var(--percent100);
 }

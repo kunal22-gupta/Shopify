@@ -202,4 +202,11 @@
     .products.main .item {
         flex: 0 0 25%;
     }
+
+    /* Newsletter */
+    .newsletter .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
