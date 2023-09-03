@@ -374,7 +374,8 @@ nav .mega .flexcol {
 }
 /* Search box */
 .header-main .right,
-.newsletter form {
+.newsletter form,
+.search-bottom form {
     position: relative;
     flex: 1;
 }
@@ -1016,4 +1017,28 @@ form.search button:hover {
     border-radius: var(--percent50);
     background-color: var(--secondary-dark-color);
     margin-right: -20px;
+}
+/* Search Box */
+.search-bottom {
+    position: fixed;
+    bottom: 60px;
+    width: var(--percent100);
+    background-color: var(--secondary-dark-color);
+    padding: 2.5em 0;
+    z-index: 999999;
+    visibility: hidden;
+    opacity: none;
+    will-change: visibility, opacity;
+}
+.show-search .search-bottom {
+    visibility: visible;
+    opacity: 1;
+}
+.search-bottom .t-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+.search-bottom .t-close:hover {
+    background-color: var(--primary-color);
 }
