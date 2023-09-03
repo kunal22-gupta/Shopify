@@ -1,5 +1,6 @@
 @media screen and (min-width: 481px) {
-    .products.main .item {
+    .products.main .item,
+    .widgets .row {
        flex: 0 0 50%;
     }
 }
@@ -189,7 +190,7 @@
         margin-left: auto;
     }
     
-    /* Trending Products */
+    /* Trending Products and Product category Banner*/
     .trending .products,
     .product-cat .row{
         flex: 0 0 33.3333%;
@@ -198,8 +199,9 @@
         max-height: 373px;
     }
 
-    /* Featured Products */
-    .products.main .item {
+    /* Featured Products and Widgets */
+    .products.main .item,
+    .widgets .row {
         flex: 0 0 25%;
     }
 
