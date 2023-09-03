@@ -1042,3 +1042,21 @@ form.search button:hover {
 .search-bottom .t-close:hover {
     background-color: var(--primary-color);
 }
+
+/*------Overlay------*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    width: var(--percent100);
+    height: var(--percent100);
+    visibility: hidden;
+    opacity: none;
+    will-change: visibility, opacity;
+}
+.show-menu .overlay {
+    opacity: 1;
+    visibility: inherit;
+}
