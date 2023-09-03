@@ -1,9 +1,18 @@
+@media screen and (min-width: 481px) {
+    .products.main .item {
+       flex: 0 0 50%;
+    }
+}
+
 @media screen and (min-width: 768px){
     .products .price .current {
         font-size: 1.25em;
     }
     .products.mini {
         flex: 0 0 50%;
+    }
+    .products.main .item {
+        flex: 0 0 33.3333%;
     }
 }
 
@@ -185,5 +194,10 @@
     }
     .trending .products.big .media {
         max-height: 373px;
+    }
+
+    /* Featured Products */
+    .products.main .item {
+        flex: 0 0 25%;
     }
 }
