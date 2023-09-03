@@ -47,3 +47,14 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-pagination',
     }   
 });
+
+//Show search for mobile view
+const searchButton = document.querySelector('.t-search'),
+      tClose = document.querySelector('.search-close'),
+      showClass = document.querySelector('.site');
+searchButton.addEventListener('click', function() {
+    showClass.classList.toggle('show-search');
+});
+tClose.addEventListener('click', function() {
+    showClass.classList.remove('show-search');
+});
